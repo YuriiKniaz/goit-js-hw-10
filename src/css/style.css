@@ -1,0 +1,98 @@
+/* HELPFULL */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e3e3;
+  padding: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #4d4d4d;
+  background-image: url(../images/cat-paws.jpg);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* MAIN INDEX */
+
+.loader {
+  width: 52px;
+  height: 52px;
+  border: 5px solid #ffffff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.breed-select {
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 4px 10px 20px hsla(0, 0%, 0%, 25%);
+}
+
+/* CAT BREED WRAPER */
+
+.cat-info {
+  display: flex;
+  align-content: center;
+  padding: 16px;
+  margin-top: 32px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 4px 10px 20px hsla(0, 0%, 0%, 25%);
+}
+
+.descr-wraper {
+  padding: 12px;
+}
+
+.cat-breed {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.breed-descr {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.cat-temp {
+  font-size: 18px;
+}
